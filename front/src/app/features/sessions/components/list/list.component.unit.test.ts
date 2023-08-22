@@ -4,7 +4,6 @@ import { MatCardModule } from '@angular/material/card';
 import { MatIconModule } from '@angular/material/icon';
 import { expect } from '@jest/globals';
 import { SessionService } from 'src/app/services/session.service';
-
 import { ListComponent } from './list.component';
 
 describe('ListComponent', () => {
@@ -33,4 +32,7 @@ describe('ListComponent', () => {
   it('should create', () => {
     expect(component).toBeTruthy();
   });
+
+  //TODO test get user ?
+
 });
