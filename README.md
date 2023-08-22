@@ -25,10 +25,6 @@ Back:
 # How launch tests ?
 
 # Front:
-
-
-lancer les tests:
-
 - Tests unitaires
     Dans un invité de commande aller dans le dossier 'front/' et faites un 'npm run test unit'.
   
@@ -40,3 +36,6 @@ lancer les tests:
     Ensuite pour générer le coverage faite un 'npm run e2e:coverage'.
 
 # Back:
+- Test unitaires et intégration
+  Configuré pour se lancer lors des taches maven, un simple 'clean install' va lancer tout les tests et gébérer un rapport dans 'Testez-une-application-full-stack\back\target\jacoco.exec'.
+  
