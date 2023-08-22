@@ -49,6 +49,11 @@ public class SessionController {
         return ResponseEntity.ok().body(this.sessionMapper.toDto(sessions));
     }
 
+    // Test example: je fais une requete http
+    // @Valid et @RequestBody s'appliquent au SessionDTO
+    // NON => sessionController.create();
+    // .class du return + test des value de la SessionDTO
+    
     @PostMapping()
     public ResponseEntity<?> create(@Valid @RequestBody SessionDto sessionDto) {
         log.info(sessionDto);

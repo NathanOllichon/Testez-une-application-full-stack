@@ -13,6 +13,7 @@ import java.time.LocalDateTime;
 @AllArgsConstructor
 public class TeacherDto {
     private Long id;
+    
     @NotBlank
     @Size(max = 20)
     private String lastName;

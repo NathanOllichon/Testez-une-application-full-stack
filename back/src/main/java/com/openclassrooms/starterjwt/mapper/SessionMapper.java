@@ -20,6 +20,9 @@ import java.util.stream.Collectors;
 @Mapper(componentModel = "spring", uses = {UserService.class}, imports = {Arrays.class, Collectors.class, Session.class, User.class, Collections.class, Optional.class})
 public abstract class SessionMapper implements EntityMapper<SessionDto, Session> {
 
+	//TODO couvrir ces cas, mais pas ceux qui sont juste des interface
+	//pas les interfaces, elle seront testés dans les tests d'integration
+	
     @Autowired
     TeacherService teacherService;
     @Autowired
