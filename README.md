@@ -1,7 +1,4 @@
-TODO: 
 
-la façon la plus simple pour cela est de mettre à la racine de votre
-projet un fichier README rédigé en markdown.
 ● Le README doit expliquer :
 ○ comment installer la base de données ;
 ○ comment installer l’application ;
@@ -19,9 +16,27 @@ How install dependencies ?
 
 Front:
 
+launch 
+  npm run e2e
+generate coverage:
+  npm run e2e:coverage
 Back:
 
-How launch tests ?
+# How launch tests ?
 
-- step 1
-- step 2
+# Front:
+
+
+lancer les tests:
+
+- Tests unitaires
+    Dans un invité de commande aller dans le dossier 'front/' et faites un 'npm run test unit'.
+  
+- Tests d'intégration
+    Dans un invité de commande aller dans le dossier 'front/' et faites un 'npm run test int'.
+    
+- Tests e2e:
+    Dans un invité de commande aller dans le dossier 'front/' et faites un 'npm run e2e'.
+    Ensuite pour générer le coverage faite un 'npm run e2e:coverage'.
+
+# Back:
